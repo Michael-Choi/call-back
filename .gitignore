@@ -24,4 +24,4 @@ yarn-error.log*
 
 /awsfilter/Genesys-call-back-f9ef946c39ca.json
 /awsfilter/node_modules
-/awsfilter/.env
+/awsfilter/helpers/.env

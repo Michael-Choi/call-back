@@ -1,14 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const response = fetch("https://jsonplaceholder.typicode.com/todos/1").then(
+    response => response.json()
+  );
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <div>response</div>
+
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hello This is the genesys hackathon Edit <code>src/App.js</code> and
+          save to reload.
         </p>
         <a
           className="App-link"
