@@ -34,10 +34,10 @@ As a reference
 
 1. Home page
 
-   !["Home page"](https://github.com/Michael-Choi/scheduler/blob/master/docs/homescreen.png)
+   !["Home page"](https://github.com/Michael-Choi/call-back/blob/master/docs/homescreen.png)
 
 2) Write an interview question!
-   !["Write an interview question!"](https://github.com/Michael-Choi/scheduler/blob/master/docs/queryresults.png)
+   !["Write an interview question!"](https://github.com/Michael-Choi/call-back/blob/master/docs/queryresults.png)
 
 3) Practice with a random interview question!
-   !["Practice with a random interview question!!"](https://github.com/Michael-Choi/scheduler/blob/master/docs/randomquestion.png)
+   !["Practice with a random interview question!!"](https://github.com/Michael-Choi/call-back/blob/master/docs/randomquestion.png)
