@@ -23,7 +23,6 @@ async function classifyText(question, answer) {
       category.name.toLowerCase().includes("job") &&
       category.confidence > 0.2
     ) {
-      //TODO make the post request to GENESYS API HERE
       console.log("Success! this has been marked as job related");
       let options = {
         method: "POST",
@@ -32,9 +31,8 @@ async function classifyText(question, answer) {
         headers: {
           "Postman-Token": "ad58ae61-1ba8-4fac-ad64-ccc5bc23b34f",
           "cache-control": "no-cache",
-          token:
-            "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdJZCI6IjhiZjk5NDI1LWVkNzgtNGY5OC05MzU3LWE1NDU4Mzk1ZTMwZiIsImV4cCI6MTU3MTUzODA4NCwiaWF0IjoxNTcxNTM0NDg0fQ.56lgkyqss5xNFKfDrcyRqbCGxzU-rnyNQrJ0tWng40g",
-          organizationid: "8bf99425-ed78-4f98-9357-a5458395e30f",
+          token: process.env.TOKEN,
+          organizationid: process.env.ORGANIZATION_ID,
           "Content-Type": "application/json"
         },
         body: {
