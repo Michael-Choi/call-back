@@ -31,3 +31,13 @@ Ensure that the post request is in json format, refer to the json file found at:
 docs/routefilter.json
 
 As a reference
+
+1. Home page
+
+   !["Home page"](https://github.com/Michael-Choi/scheduler/blob/master/docs/homescreen.png)
+
+2) Write an interview question!
+   !["Write an interview question!"](https://github.com/Michael-Choi/scheduler/blob/master/docs/queryresults.png)
+
+3) Practice with a random interview question!
+   !["Practice with a random interview question!!"](https://github.com/Michael-Choi/scheduler/blob/master/docs/randomquestion.png)
