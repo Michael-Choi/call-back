@@ -16,6 +16,10 @@ function App() {
     if (e) {
       e.preventDefault();
     }
+    if (queryVal.length === 0) {
+      setCurrentStatus("Query can not be empty");
+      return;
+    }
     setCurrentStatus("Loading...");
     console.log(e);
     const options = {

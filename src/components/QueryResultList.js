@@ -8,6 +8,7 @@ const QueryResultList = props => {
     .map(element => {
       return (
         <QueryResultItem
+          key={element.id}
           question={element.faq.question}
           answer={element.faq.answer}
         />
@@ -15,6 +16,7 @@ const QueryResultList = props => {
     });
   return (
     <Container maxWidth="md">
+      <br />
       {props.currentStatus ? props.currentStatus : queryResults}
     </Container>
   );
