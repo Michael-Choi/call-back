@@ -10,12 +10,12 @@ const QueryResults = props => {
         <br />
         <div>Answer: {props.answer}</div>
       </CardContent>
-      <CardActions>
+      {/* <CardActions>
         <div>Helpfulness: {props.votes}</div>
 
         <Button>Upvote</Button>
         <Button>Downvote</Button>
-      </CardActions>
+      </CardActions> */}
     </StyledCard>
   );
 };
