@@ -6,7 +6,7 @@ import styled from "styled-components";
 import QueryResultList from "./components/QueryResultList";
 import RandomResult from "./components/RandomResult";
 let token =
-  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdJZCI6IjhiZjk5NDI1LWVkNzgtNGY5OC05MzU3LWE1NDU4Mzk1ZTMwZiIsImV4cCI6MTU3MTU3NTc5NSwiaWF0IjoxNTcxNTcyMTk1fQ.YmlavAGCpsjM_Z5gTpwrfGi_OLkcuADxwOFWjr6c-k0";
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdJZCI6IjhiZjk5NDI1LWVkNzgtNGY5OC05MzU3LWE1NDU4Mzk1ZTMwZiIsImV4cCI6MTU3MTU4ODUxMywiaWF0IjoxNTcxNTg0OTEzfQ.4ywEnPyzPZH6o8mklUmWjx5gDPrDUXCsKrlVGKy1r_4";
 
 function App() {
   //queryVal is the query used to search the api
@@ -142,15 +142,16 @@ function App() {
 }
 
 const StyledHeader = styled(Header)`
+  margin-top: 10%;
   text-align: center;
 `;
 const StyledHomePage = styled.div`
-  top: 3%;
   height: 100vh;
 `;
 
 const StyledSearchbar = styled(Searchbar)`
-  top: 20%;
+  top: 50%;
+  margin-top: 2%;
   text-align: center;
 `;
 

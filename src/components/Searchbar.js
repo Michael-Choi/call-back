@@ -15,17 +15,21 @@ const Searchbar = props => {
         />
         <br />
         <br />
-        <Button
+        <StyledButton
           variant="outlined"
           color="primary"
           type="submit"
           onClick={props.queryKnowledge}
         >
           Submit
-        </Button>
-        <Button variant="outlined" color="primary" onClick={props.randomQuery}>
+        </StyledButton>
+        <StyledButton
+          variant="outlined"
+          color="primary"
+          onClick={props.randomQuery}
+        >
           Random Question
-        </Button>
+        </StyledButton>
       </form>
     </div>
   );
@@ -33,5 +37,7 @@ const Searchbar = props => {
 const StyledTextField = styled(TextField)`
   width: 50%;
 `;
-
+const StyledButton = styled(Button)`
+  margin: 100;
+`;
 export default Searchbar;
