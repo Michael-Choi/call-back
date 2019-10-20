@@ -23,11 +23,7 @@ const Searchbar = props => {
         >
           Submit
         </Button>
-        <Button
-          variant="outlined"
-          color="primary"
-          onClick={e => e.preventDefault()}
-        >
+        <Button variant="outlined" color="primary" onClick={props.randomQuery}>
           Random Question
         </Button>
       </form>
