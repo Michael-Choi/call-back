@@ -5,11 +5,20 @@ import axios from "axios";
 import styled from "styled-components";
 import QueryResultList from "./components/QueryResultList";
 import RandomResult from "./components/RandomResult";
+let token =
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdJZCI6IjhiZjk5NDI1LWVkNzgtNGY5OC05MzU3LWE1NDU4Mzk1ZTMwZiIsImV4cCI6MTU3MTU3NTc5NSwiaWF0IjoxNTcxNTcyMTk1fQ.YmlavAGCpsjM_Z5gTpwrfGi_OLkcuADxwOFWjr6c-k0";
+
 function App() {
+  //queryVal is the query used to search the api
+  //query/random results are results after pressing their respective buttons
+  //loading status
+  //buttonval random query button status
+  //
   const [queryVal, setQuery] = useState("");
   const [queryResult, setQueryResult] = useState([]);
   const [randomResult, setRandomResult] = useState([]);
   const [currentStatus, setCurrentStatus] = useState("");
+  const [queryAnsVal, setQueryAnsVal] = useState([]);
   const [buttonVal, setButtonVal] = useState(true);
   function queryKnowledge(e) {
     setRandomResult([]);
@@ -26,8 +35,7 @@ function App() {
       headers: {
         "Content-Type": "application/json",
         organizationid: "8bf99425-ed78-4f98-9357-a5458395e30f",
-        token:
-          "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdJZCI6IjhiZjk5NDI1LWVkNzgtNGY5OC05MzU3LWE1NDU4Mzk1ZTMwZiIsImV4cCI6MTU3MTU2ODQwMywiaWF0IjoxNTcxNTY0ODAzfQ.UkgE7GvR7vlpVU_Q5wl1f5-RTJVTGrEAR85Yf1rJVuY",
+        token: token,
 
         "cache-control": "no-cache",
         "Postman-Token": "6bcf62f6-75d6-4d42-a805-185a1b2bbbf6"
@@ -35,7 +43,7 @@ function App() {
     };
     axios
       .post(
-        "https://cors-anywhere.herokuapp.com/https://api.genesysappliedresearch.com/v2/knowledge/knowledgebases/61d4a545-97fd-4ab2-b2dc-403f1e80c1ec/search",
+        "https://cors-anywhere.herokuapp.com/https://api.genesysappliedresearch.com/v2/knowledge/knowledgebases/0c9a3997-fe2f-4a85-b568-c451d61c495e/search",
         {
           query: queryVal,
           pageSize: 5,
@@ -74,8 +82,7 @@ function App() {
       headers: {
         "Content-Type": "application/json",
         organizationid: "8bf99425-ed78-4f98-9357-a5458395e30f",
-        token:
-          "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdJZCI6IjhiZjk5NDI1LWVkNzgtNGY5OC05MzU3LWE1NDU4Mzk1ZTMwZiIsImV4cCI6MTU3MTU2ODQwMywiaWF0IjoxNTcxNTY0ODAzfQ.UkgE7GvR7vlpVU_Q5wl1f5-RTJVTGrEAR85Yf1rJVuY",
+        token: token,
 
         "cache-control": "no-cache",
         "Postman-Token": "6bcf62f6-75d6-4d42-a805-185a1b2bbbf6"
@@ -118,6 +125,8 @@ function App() {
         queryVal={queryVal}
       />
       <QueryResultList
+        setQueryAnsVal={setQueryAnsVal}
+        queryAnsVal={queryAnsVal}
         currentStatus={currentStatus}
         queryResult={queryResult}
       />

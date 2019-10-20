@@ -11,6 +11,7 @@ const QueryResultList = props => {
           key={element.id}
           question={element.faq.question}
           answer={element.faq.answer}
+          votes={element.externalUrl}
         />
       );
     });

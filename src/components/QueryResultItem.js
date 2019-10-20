@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
+import { Card, CardContent, CardActions, Button } from "@material-ui/core/";
+
 import styled from "styled-components";
 const QueryResults = props => {
   return (
@@ -10,6 +10,12 @@ const QueryResults = props => {
         <br />
         <div>Answer: {props.answer}</div>
       </CardContent>
+      <CardActions>
+        <div>Helpfulness: {props.votes}</div>
+
+        <Button>Upvote</Button>
+        <Button>Downvote</Button>
+      </CardActions>
     </StyledCard>
   );
 };

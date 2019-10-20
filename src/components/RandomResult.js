@@ -10,7 +10,10 @@ const RandomResult = props => {
           <div>Question: {props.randomResult[0]}</div>
           <br />
           {props.buttonVal ? (
-            <Button onClick={() => props.setButtonVal(false)}>
+            <Button
+              variant="outlined"
+              onClick={() => props.setButtonVal(false)}
+            >
               View Answer
             </Button>
           ) : (
