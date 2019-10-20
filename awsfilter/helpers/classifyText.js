@@ -40,8 +40,8 @@ async function classifyText(question, answer) {
         body: {
           type: "faq",
           faq: {
-            question: question,
-            answer: answer
+            question,
+            answer
           },
           externalUrl:
             "http://test.co/info/d6d2d9c5-09ca-4443-ba9b-cebaa52cf5de"
