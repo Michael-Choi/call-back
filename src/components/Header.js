@@ -1,7 +1,7 @@
 import React from "react";
 
-const Header = () => {
-  return <div>Genesys Hackathon Call-back Project</div>;
+const Header = props => {
+  return <h1 className={props.className}>Interview Call-back </h1>;
 };
 
 export default Header;
