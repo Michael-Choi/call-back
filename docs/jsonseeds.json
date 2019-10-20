@@ -193,5 +193,62 @@
       "answer": "Start by explaining what you'd need to do to get ramped up. What information would you need? What parts of the company would you need to familiarize yourself with? What other employees would you want to sit down with? Next, choose a couple of areas where you think you can make meaningful contributions right away. (e.g., 'I think a great starter project would be diving into your email marketing campaigns and setting up a tracking system for them.') Sure, if you get the job, you (or your new employer) might decide there’s a better starting place, but having an answer prepared will show the interviewer where you can add immediate impact—and that you’re excited to get started."
     },
     "externalUrl": "http://test.co/info/{{$guid}}"
+  },
+  {
+    "type": "faq",
+    "faq": {
+      "question": "What are your salary requirements?",
+      "answer": "The #1 rule of answering this question is doing your research on what you should be paid by using sites like Payscale and Glassdoor. You’ll likely come up with a range, and we recommend stating the highest number in that range that applies, based on your experience, education, and skills. Then, make sure the hiring manager knows that you're flexible. You're communicating that you know your skills are valuable, but that you want the job and are willing to negotiate."
+    },
+    "externalUrl": "http://test.co/info/{{$guid}}"
+  },
+  {
+    "type": "faq",
+    "faq": {
+      "question": "What do you like to do outside of work?",
+      "answer": "Interviewers ask personal questions in an interview to 'see if candidates will fit in with the culture [and] give them the opportunity to open up and display their personality, too,' says longtime hiring manager Mitch Fortner. 'In other words, if someone asks about your hobbies outside of work, it’s totally OK to open up and share what really makes you tick. (Do keep it semi-professional, though: Saying you like to have a few beers at the local hot spot on Saturday night is fine. Telling them that Monday is usually a rough day for you because you’re always hungover is not.)"
+    },
+    "externalUrl": "http://test.co/info/{{$guid}}"
+  },
+  {
+    "type": "faq",
+    "faq": {
+      "question": "If you were an animal, which one would you want to be?",
+      "answer": "Seemingly random personality-test type questions like these come up in interviews generally because hiring managers want to see how you can think on your feet. There's no wrong answer here, but you'll immediately gain bonus points if your answer helps you share your strengths or personality or connect with the hiring manager. Pro tip: Come up with a stalling tactic to buy yourself some thinking time, such as saying, 'Now, that is a great question. I think I would have to say… "
+    },
+    "externalUrl": "http://test.co/info/{{$guid}}"
+  },
+  {
+    "type": "faq",
+    "faq": {
+      "question": "How many tennis balls can you fit into a limousine?",
+      "answer": "Well, seriously, you might get asked brainteaser questions like these, especially in quantitative jobs. But remember that the interviewer doesn’t necessarily want an exact number—he wants to make sure that you understand what’s being asked of you, and that you can set into motion a systematic and logical way to respond. So, just take a deep breath, and start thinking through the math. (Yes, it’s OK to ask for a pen and paper!)"
+    },
+    "externalUrl": "http://test.co/info/{{$guid}}"
+  },
+  {
+    "type": "faq",
+    "faq": {
+      "question": "Are you planning on having children?",
+      "answer": "Questions about your family status, gender ('How would you handle managing a team of all men?'), nationality ('Where were you born?'), religion, or age, are illegal—but they still get asked (and frequently). Of course, not always with ill intent—the interviewer might just be trying to make conversation—but you should definitely tie any questions about your personal life (or anything else you think might be inappropriate) back to the job at hand. For this question, think: 'You know, I’m not quite there yet. But I am very interested in the career paths at your company. Can you tell me more about that?"
+    },
+    "externalUrl": "http://test.co/info/{{$guid}}"
+  },
+  {
+    "type": "faq",
+    "faq": {
+      "question": "What do you think we could do better or differently?",
+      "answer": "This is a common one at startups (and one of our personal favorites here at The Muse). Hiring managers want to know that you not only have some background on the company, but that you're able to think critically about it and come to the table with new ideas. So, come with new ideas! What new features would you love to see? How could the company increase conversions? How could customer service be improved? You don’t need to have the company’s four-year strategy figured out, but do share your thoughts, and more importantly, show how your interests and expertise would lend themselves to the job."
+    },
+    "externalUrl": "http://test.co/info/{{$guid}}"
+  },
+
+  {
+    "type": "faq",
+    "faq": {
+      "question": "Do you have any questions for us?",
+      "answer": "You probably already know that an interview isn't just a chance for a hiring manager to grill you—it's your opportunity to sniff out whether a job is the right fit for you. What do you want to know about the position? The company? The department? The team? You'll cover a lot of this in the actual interview, so have a few less-common questions ready to go. We especially like questions targeted to the interviewer ('What's your favorite part about working here?'') or the company's growth ('What can you tell me about your new products or plans for growth?')"
+    },
+    "externalUrl": "http://test.co/info/{{$guid}}"
   }
 ]
