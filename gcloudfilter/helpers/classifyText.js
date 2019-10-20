@@ -5,10 +5,6 @@ const language = require("@google-cloud/language");
 const client = new language.LanguageServiceClient();
 const request = require("request");
 
-// let a = "Why do you want this job job job?";
-// let b =
-//   "This post is about jobs. Making sure that google marks this as jobs. Again, companies want to hire people who are passionate about the job, so you should have a great answer about why you want the position. (And if you don't? You probably should apply elsewhere.) First, identify a couple of key factors that make the role a great fit for you (e.g., 'I love customer support because I love the constant human interaction and the satisfaction that comes from helping someone solve a problem'), then share why you love the company (e.g., “I’ve always been passionate about education, and I think you guys are doing great things, so I want to be a part of it”).";
-
 async function classifyText(question, answer) {
   const document = {
     content: answer,
@@ -27,12 +23,13 @@ async function classifyText(question, answer) {
       let options = {
         method: "POST",
         url:
-          "https://api.genesysappliedresearch.com/v2/knowledge/knowledgebases/a758dd00-9ffe-4a9b-8aa7-54687fc9330f/languages/en-US/documents/",
+          "https://api.genesysappliedresearch.com/v2/knowledge/knowledgebases/0c9a3997-fe2f-4a85-b568-c451d61c495e/languages/en-US/documents/",
         headers: {
           "Postman-Token": "ad58ae61-1ba8-4fac-ad64-ccc5bc23b34f",
           "cache-control": "no-cache",
-          token: process.env.TOKEN,
-          organizationid: process.env.ORGANIZATION_ID,
+          token:
+            "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdJZCI6IjhiZjk5NDI1LWVkNzgtNGY5OC05MzU3LWE1NDU4Mzk1ZTMwZiIsImV4cCI6MTU3MTU4ODUxMywiaWF0IjoxNTcxNTg0OTEzfQ.4ywEnPyzPZH6o8mklUmWjx5gDPrDUXCsKrlVGKy1r_4",
+          organizationid: "8bf99425-ed78-4f98-9357-a5458395e30f",
           "Content-Type": "application/json"
         },
         body: {
@@ -41,8 +38,7 @@ async function classifyText(question, answer) {
             question,
             answer
           },
-          externalUrl:
-            "http://test.co/info/d6d2d9c5-09ca-4443-ba9b-cebaa52cf5de"
+          externalUrl: "0"
         },
         json: true
       };
