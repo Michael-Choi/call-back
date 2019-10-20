@@ -15,10 +15,21 @@ const Searchbar = props => {
         />
         <br />
         <br />
-        <Button type="submit" onClick={props.queryKnowledge}>
+        <Button
+          variant="outlined"
+          color="primary"
+          type="submit"
+          onClick={props.queryKnowledge}
+        >
           Submit
         </Button>
-        <Button onClick={e => e.preventDefault()}>Random Question</Button>
+        <Button
+          variant="outlined"
+          color="primary"
+          onClick={e => e.preventDefault()}
+        >
+          Random Question
+        </Button>
       </form>
     </div>
   );

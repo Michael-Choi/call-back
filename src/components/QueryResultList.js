@@ -1,9 +1,10 @@
 import React from "react";
 import QueryResultItem from "./QueryResultItem";
+import Container from "@material-ui/core/Container";
 
 const QueryResultList = props => {
   const queryResults = props.queryResult
-    .filter(element => element.confidence > 0.2)
+    .filter(element => element.confidence > 0.3)
     .map(element => {
       return (
         <QueryResultItem
@@ -12,7 +13,11 @@ const QueryResultList = props => {
         />
       );
     });
-  return <ul>{props.currentStatus ? props.currentStatus : queryResults}</ul>;
+  return (
+    <Container maxWidth="md">
+      {props.currentStatus ? props.currentStatus : queryResults}
+    </Container>
+  );
 };
 
 export default QueryResultList;

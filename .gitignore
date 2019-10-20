@@ -22,6 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/awsfilter/Genesys-call-back-f9ef946c39ca.json
-/awsfilter/node_modules
-/awsfilter/helpers/.env
+/gcloudfilter/Genesys-call-back-f9ef946c39ca.json
+/gcloudfilter/node_modules
+/gcloudfilter/helpers/.env
